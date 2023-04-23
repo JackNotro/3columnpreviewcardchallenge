@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    font: inherit;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+h1 {
+    color: transparent;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    color: var(--very-light-gray);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--transparent-white);
+}
+
+.flex-div {
+    display: flex;
+    max-width: 52rem;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+.wrapper {
+    padding: 2.2rem;
+    height: 25rem;
+    position: relative;
+}
+
+.sedan {
+    background: var(--bright-orange);
+}
+
+.sedan button {
+    color: var(--bright-orange)
+}
+
+.suv {
+    background: var(--dark-cyan);
+}
+
+.suv button {
+    color: var(--dark-cyan)
+}
+
+.luxury {
+    background: var(--very-dark-cyan);
+}
+
+button {
+    position: absolute;
+    bottom: 2rem;
+    padding-inline: 2.5rem;
+    padding-block: 0.8rem;
+    background: var(--very-light-gray);
+    border: 0;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (max-width: 650px) {
+    .flex-div {
+        flex-direction: column;
+        margin-inline: 3rem;
+        margin-block: 1rem;
+    }
+
+    .wrapper {
+        height: 300px;
+    }
+}
